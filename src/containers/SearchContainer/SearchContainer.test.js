@@ -17,4 +17,10 @@ describe('SearchContainer', () => {
 	it('should render SearchBar', () => {
 		expect(searchContainer.find('SearchBar').exists()).toBe(true)
 	})
+	it('fetches data from api and returns promise', () => {
+		expect.assertions(1)
+		return fetchData().then(data => {
+			expect(data).toBe()
+		})
+	})
 })
