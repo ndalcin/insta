@@ -13,7 +13,7 @@ describe('App', () => {
 		expect(app.find('div').length).toEqual(1)
 	})
 	it('should render the SearchContainer component', () => {
-		expect(app.containsMatchingElement(<SearchContainer />)).toEqual(true)
+		expect(app.find(SearchContainer).length).toBe(1)
 	})
 })
 
