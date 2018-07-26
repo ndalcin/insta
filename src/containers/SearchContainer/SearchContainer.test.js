@@ -1,5 +1,7 @@
 import React from 'react'
 import { shallow } from 'enzyme'
+import renderer from 'react-test-renderer'
+
 import SearchContainer from './SearchContainer'
 import PostsList from '../../components/PostsList/PostsList'
 

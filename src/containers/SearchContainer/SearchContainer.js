@@ -7,6 +7,16 @@ class SearchContainer extends React.Component {
 		query: '',
 		posts: []
 	}
+	handleInputChange = () => {
+		console.log('in handle input change')
+	}
+	handleSubmit = () => {
+		console.log('in handle submit')
+	}
+
+	fetchPosts = () => {
+		console.log('in fetch posts')
+	}
 	render() {
 		return (
 			<div>
