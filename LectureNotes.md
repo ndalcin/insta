@@ -92,9 +92,12 @@ _This lecture is to introduce students to Test Driven Development in React, usin
   * describe(), it() -> test blocks
   * beforeEach()
   * toMatchSnapshot()
+  * jest.fn()
+
 * Enzyme methods to know:
   * find() - CSS classname, element selector, component
-
+  * instance() -> instance of shallowly render component, used for checking state or functions that are being passed down as props
+  * 
 
 ### Student Exercise
 
