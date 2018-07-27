@@ -10,9 +10,6 @@ class SearchContainer extends React.Component {
 	handleInputChange = () => {
 		console.log('in handle input change')
 	}
-	handleSubmit = () => {
-		console.log('in handle submit')
-	}
 
 	fetchPosts = () => {
 		console.log('in fetch posts')
@@ -20,8 +17,8 @@ class SearchContainer extends React.Component {
 	render() {
 		return (
 			<div>
-				<PostsList />
-				<SearchBar query={''} />
+				<PostsList posts={this.state.posts}/>
+				<SearchBar handleInputChange={this.handleInputChange} query={this.state.query}/>
 			</div>
 		)
 	}

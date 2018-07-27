@@ -84,11 +84,17 @@ _This lecture is to introduce students to Test Driven Development in React, usin
 
   configure({ adapter: new Adapter() });
   ```
+* Jest looks for files with a ".test.js" filename to run the tests
 
-### Writing Tests/
+### Writing Tests
 
 * Jest words to know:
-  *
+  * describe(), it() -> test blocks
+  * beforeEach()
+  * toMatchSnapshot()
+* Enzyme methods to know:
+  * find() - CSS classname, element selector, component
+
 
 ### Student Exercise
 

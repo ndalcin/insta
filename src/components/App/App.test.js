@@ -3,17 +3,22 @@ import { shallow } from 'enzyme'
 import App from './App'
 import SearchContainer from '../../containers/SearchContainer/SearchContainer'
 
-describe('App', () => {
-	let app
-	beforeEach(() => {
-		app = shallow(<App />)
-	})
+// App should render properly
+// App should render the SearchContainer component
 
-	it('should render a <div />', () => {
-		expect(app.find('div').length).toEqual(1)
+describe('App', () => {
+	let wrapper;
+	beforeEach(() => {
+		wrapper = shallow(<App />)
 	})
-	it('should render the SearchContainer component', () => {
-		expect(app.find(SearchContainer).length).toBe(1)
+	// it('should render a <div />', () => {
+	// 	expect(wrapper.find('.App').length).toEqual(1)
+	// })
+	// it('should render the SearchContainer component', () => {
+	// 	expect(wrapper.containsMatchingElement(<SearchContainer />)).toEqual(true)
+	// })
+	it('should render correctly', () => {
+		expect(wrapper).toMatchSnapshot();
 	})
 })
 
