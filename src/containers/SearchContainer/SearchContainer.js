@@ -7,18 +7,25 @@ class SearchContainer extends React.Component {
 		query: '',
 		posts: []
 	}
-	handleInputChange = () => {
-		console.log('in handle input change')
+	handleInputChange = e => {
+		this.setState({ query: e.target.value })
 	}
-
+	handleSubmit = e => {
+		e.preventDefault()
+		console.log('testing')
+	}
 	fetchPosts = () => {
 		console.log('in fetch posts')
 	}
 	render() {
 		return (
 			<div>
-				<PostsList posts={this.state.posts}/>
-				<SearchBar handleInputChange={this.handleInputChange} query={this.state.query}/>
+				<PostsList posts={this.state.posts} />
+				<SearchBar
+					handleInputChange={this.handleInputChange}
+					query={this.state.query}
+					handleSubmit={this.handleSubmit}
+				/>
 			</div>
 		)
 	}

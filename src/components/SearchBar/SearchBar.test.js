@@ -6,7 +6,13 @@ describe('SearchBar', () => {
 	let searchBar
 
 	beforeEach(() => {
-		searchBar = shallow(<SearchBar handleInputChange={jest.fn()} query={''} />)
+		searchBar = shallow(
+			<SearchBar
+				handleSubmit={jest.fn()}
+				handleInputChange={jest.fn()}
+				query={''}
+			/>
+		)
 	})
 
 	it('should render correctly', () => {

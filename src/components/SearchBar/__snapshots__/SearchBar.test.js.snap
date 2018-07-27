@@ -6,6 +6,7 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <SearchBar
     handleInputChange={[Function]}
+    handleSubmit={[Function]}
     query=""
 />,
   Symbol(enzyme.__renderer__): Object {
@@ -20,12 +21,48 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "onChange": [Function],
-      "value": "",
+      "children": Array [
+        <input
+          onChange={[Function]}
+          value=""
+/>,
+        <button
+          onClick={[Function]}
+          type="submit"
+>
+          search gifs
+</button>,
+      ],
     },
     "ref": null,
-    "rendered": null,
-    "type": "input",
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "onChange": [Function],
+          "value": "",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "input",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "search gifs",
+          "onClick": [Function],
+          "type": "submit",
+        },
+        "ref": null,
+        "rendered": "search gifs",
+        "type": "button",
+      },
+    ],
+    "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
@@ -33,12 +70,48 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "onChange": [Function],
-        "value": "",
+        "children": Array [
+          <input
+            onChange={[Function]}
+            value=""
+/>,
+          <button
+            onClick={[Function]}
+            type="submit"
+>
+            search gifs
+</button>,
+        ],
       },
       "ref": null,
-      "rendered": null,
-      "type": "input",
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "onChange": [Function],
+            "value": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "input",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "search gifs",
+            "onClick": [Function],
+            "type": "submit",
+          },
+          "ref": null,
+          "rendered": "search gifs",
+          "type": "button",
+        },
+      ],
+      "type": "div",
     },
   ],
   Symbol(enzyme.__options__): Object {

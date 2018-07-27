@@ -23,6 +23,7 @@ ShallowWrapper {
 />,
         <SearchBar
           handleInputChange={[Function]}
+          handleSubmit={[Function]}
           query=""
 />,
       ],
@@ -46,6 +47,7 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "handleInputChange": [Function],
+          "handleSubmit": [Function],
           "query": "",
         },
         "ref": null,
@@ -67,6 +69,7 @@ ShallowWrapper {
 />,
           <SearchBar
             handleInputChange={[Function]}
+            handleSubmit={[Function]}
             query=""
 />,
         ],
@@ -90,6 +93,7 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "handleInputChange": [Function],
+            "handleSubmit": [Function],
             "query": "",
           },
           "ref": null,

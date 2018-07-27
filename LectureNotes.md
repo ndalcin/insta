@@ -27,7 +27,7 @@ _This lecture is to introduce students to Test Driven Development in React, usin
  10m  Starter code, install Enzyme, app mock
 20m   Writing Tests/Components
 10m   Student Exercise
-10m   Snapshots
+
 ===
  1h   Total
 ```
@@ -84,21 +84,28 @@ _This lecture is to introduce students to Test Driven Development in React, usin
 
   configure({ adapter: new Adapter() });
   ```
+
 * Jest looks for files with a ".test.js" filename to run the tests
 
 ### Writing Tests
 
-* Jest words to know:
+* Jest VOCAB:
+
   * describe(), it() -> test blocks
-  * beforeEach()
-  * toMatchSnapshot()
-  * jest.fn()
+  * beforeEach() / afterEach() ->
+  * toMatchSnapshot() -> compare the rendered output of component with the previous (saved) snapshot. If they don't match, either the test runner found a bug in your code that should be fixed, or the implementation has changed and the snapshot needs to be updated
+  * jest.fn() => mock function
+  * spyOn() -> watch a specific function, tracks calls to that real function
 
 * Enzyme methods to know:
+
   * find() - CSS classname, element selector, component
   * instance() -> instance of shallowly render component, used for checking state or functions that are being passed down as props
-  * 
+  * shallow -> renders only the component and none of its children, good for unit testing
+  * mount -> renders component and children, used to test behavior of children components
+  * simulate -> simulate/create/mock the user event
 
 ### Student Exercise
 
-### Snapshots
+* Even though your projects are already almost finished, writing tests is still beneficial, especially adding snapshots to your components that are already complete
+* Lets spend the last 10 minutes writing unit tests for your final projects
