@@ -9,8 +9,9 @@ _This lecture is to introduce students to Test Driven Development in React, usin
 * Test a React Application with Enzyme and Jest
   * Include and install Enzyme in a create-react-app application
   * Write unit tests for React components
-  * Write tests to test for different user interactions
   * Utilize Snapshots
+  * Write tests to test for different user interactions
+
 
 ## Resources
 
@@ -24,9 +25,10 @@ _This lecture is to introduce students to Test Driven Development in React, usin
 ```text
  5m   What is TDD
  5m   What are Enzyme and Jest
- 10m  Starter code, install Enzyme, app mock
+10m   Starter code, install Enzyme, app mock
 20m   Writing Tests/Components
 10m   Student Exercise
+10m   Review `instaaa` code
 
 ===
  1h   Total
@@ -108,4 +110,4 @@ _This lecture is to introduce students to Test Driven Development in React, usin
 ### Student Exercise
 
 * Even though your projects are already almost finished, writing tests is still beneficial, especially adding snapshots to your components that are already complete
-* Lets spend the last 10 minutes writing unit tests for your final projects
+* Lets spend the 10 minutes writing snapshot tests
